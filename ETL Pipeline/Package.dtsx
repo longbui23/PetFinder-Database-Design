@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="93"
-  DTS:VersionGUID="{6AE76AA4-2353-4298-8293-DDE54D782620}">
+  DTS:VersionBuild="101"
+  DTS:VersionGUID="{4C4B4C9F-C0B3-4EAD-9361-D770506D43F3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -778,6 +778,197 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 4]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{C82419A4-55F4-43CA-A0C3-0FE0733865B2}"
+      DTS:ObjectName="Flat File Connection Manager 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\PetFinder-Database-Design\Raw Data\PetFinder.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PetID"
+              DTS:DTSID="{AE294829-10B6-4DEE-91EB-99882E3341A4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Type"
+              DTS:DTSID="{8F3DA1E4-E7BC-4706-9E3D-30F0AD5DF98D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Age"
+              DTS:DTSID="{14548445-8050-41F6-8328-672E3AAB6B7C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Breed1"
+              DTS:DTSID="{AF37D5AC-405A-4E82-A374-CCF1E2D07797}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Breed2"
+              DTS:DTSID="{81953327-BC60-4E67-B35A-5931E6EF3435}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{7EB4287D-1DF1-440B-A067-3DD2DEF5A2ED}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Color1"
+              DTS:DTSID="{F22541C3-8647-40FD-A560-BEADBC2CC2AE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Color2"
+              DTS:DTSID="{AF1A2927-F892-428D-88D1-E4EB7F2B6DBE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Color3"
+              DTS:DTSID="{D14354C1-ED7A-4837-B294-D9F98A17AA73}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MaturitySize"
+              DTS:DTSID="{D4826947-9D8A-4852-957B-E74C2EB36F20}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FurLength"
+              DTS:DTSID="{9739E877-6AB8-48D0-9510-35E6845B2844}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Vaccinated"
+              DTS:DTSID="{5B6AE167-51F1-496B-B587-541768EC9451}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Dewormed"
+              DTS:DTSID="{E78ABDB7-069F-4775-8FEC-E8B1A150108E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sterilized"
+              DTS:DTSID="{2177125F-8B46-4221-8C95-9F5A38068D49}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Health"
+              DTS:DTSID="{FD360DD0-F822-49FB-8E91-EE6AFFD7E680}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Quantity"
+              DTS:DTSID="{B06AA6B0-6A9B-445A-B4E4-BD9B2021F53E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fee"
+              DTS:DTSID="{89F2471F-B87D-48E1-AB01-69036CD6A19D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="State"
+              DTS:DTSID="{10A8E26B-62C7-45C8-9AE4-9EC0B7F674F7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="RescuerID"
+              DTS:DTSID="{5BD6A18A-F0F6-41AF-8A6A-FABD9BE6DA07}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[MAYTINHCUASU\SQLEXPRESS]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{ABCBCA52-B079-40E4-A6C3-3BC1F2F06E06}"
@@ -881,6 +1072,16 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=MAYTINHCUASU\SQLEXPRESS;Initial Catalog=Pet_Finder;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package-{34474BF1-E04E-4563-AC27-E6BFD8F884B2}MAYTINHCUASU\SQLEXPRESS.Pet_Finder1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[MAYTINHCUASU\SQLEXPRESS.Pet_Finder2]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{35956C49-D567-4D66-BF7E-C78614C35541}"
+      DTS:ObjectName="MAYTINHCUASU\SQLEXPRESS.Pet_Finder2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=MAYTINHCUASU\SQLEXPRESS;Initial Catalog=Pet_Finder;Integrated Security=True;Application Name=SSIS-Package-{35956C49-D567-4D66-BF7E-C78614C35541}MAYTINHCUASU\SQLEXPRESS.Pet_Finder2;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -1086,8 +1287,1009 @@
         DTS:DataType="8"
         xml:space="preserve"></DTS:VariableValue>
     </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{6F6E489A-9965-4A31-9EF5-37A877C104AF}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="CDC_State">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task - Raw_Data"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{94237861-4301-492c-add8-ec81a2c86576}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task - Raw_Data"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task - Raw_Data\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task - Raw_Data\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 4]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 4]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[PetID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PetID]"
+                      length="50"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[PetID]"
+                      name="PetID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Type]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Type]"
+                      length="50"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Type]"
+                      name="Type"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Age]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Age]"
+                      length="50"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Age]"
+                      name="Age"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Breed1]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Breed1]"
+                      length="50"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Breed1]"
+                      name="Breed1"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Breed2]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Breed2]"
+                      length="50"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Breed2]"
+                      name="Breed2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Gender]"
+                      length="50"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Gender]"
+                      name="Gender"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Color1]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Color1]"
+                      length="50"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Color1]"
+                      name="Color1"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Color2]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Color2]"
+                      length="50"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Color2]"
+                      name="Color2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Color3]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Color3]"
+                      length="50"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Color3]"
+                      name="Color3"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[MaturitySize]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MaturitySize]"
+                      length="50"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[MaturitySize]"
+                      name="MaturitySize"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[FurLength]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FurLength]"
+                      length="50"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[FurLength]"
+                      name="FurLength"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Vaccinated]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Vaccinated]"
+                      length="50"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Vaccinated]"
+                      name="Vaccinated"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Dewormed]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Dewormed]"
+                      length="50"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Dewormed]"
+                      name="Dewormed"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Sterilized]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sterilized]"
+                      length="50"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Sterilized]"
+                      name="Sterilized"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Health]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Health]"
+                      length="50"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Health]"
+                      name="Health"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Quantity]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Quantity]"
+                      length="50"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Quantity]"
+                      name="Quantity"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Fee]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Fee]"
+                      length="50"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Fee]"
+                      name="Fee"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[State]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[State]"
+                      length="50"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[State]"
+                      name="State"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[RescuerID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[RescuerID]"
+                      length="50"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[RescuerID]"
+                      name="RescuerID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PetID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PetID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Type" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Age]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Age" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Breed1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Breed1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Breed2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Breed2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Color1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Color1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Color2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Color2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Color3]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Color3" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MaturitySize]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MaturitySize" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FurLength]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="FurLength" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Vaccinated]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Vaccinated" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Dewormed]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Dewormed" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sterilized]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Sterilized" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Health]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Health" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Quantity]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Quantity" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Fee]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fee" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[State]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="State" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[RescuerID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="RescuerID" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task - Raw_Data\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Raw_Data]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[MAYTINHCUASU\SQLEXPRESS.Pet_Finder1]"
+                  connectionManagerRefId="Package.ConnectionManagers[MAYTINHCUASU\SQLEXPRESS.Pet_Finder1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PetID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PetID"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PetID]"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[PetID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Type]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Type"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Type]"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Type]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Age]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Age"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Age]"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Age]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Breed1]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Breed1"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Breed1]"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Breed1]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Breed2]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Breed2"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Breed2]"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Breed2]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Gender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Gender"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Gender]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Color1]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Color1"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Color1]"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Color1]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Color2]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Color2"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Color2]"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Color2]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Color3]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Color3"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Color3]"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Color3]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MaturitySize]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MaturitySize"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MaturitySize]"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[MaturitySize]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FurLength]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="FurLength"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FurLength]"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[FurLength]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Vaccinated]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Vaccinated"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Vaccinated]"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Vaccinated]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Dewormed]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Dewormed"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Dewormed]"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Dewormed]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Sterilized]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Sterilized"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Sterilized]"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Sterilized]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Health]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Health"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Health]"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Health]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Quantity]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Quantity"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Quantity]"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Quantity]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Fee]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Fee"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Fee]"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[Fee]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[State]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="State"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[State]"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[State]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RescuerID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="RescuerID"
+                      externalMetadataColumnId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RescuerID]"
+                      lineageId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output].Columns[RescuerID]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PetID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PetID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Type" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Age]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Age" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Breed1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Breed1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Breed2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Breed2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Color1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Color1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Color2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Color2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Color3]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Color3" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MaturitySize]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MaturitySize" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FurLength]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="FurLength" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Vaccinated]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Vaccinated" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Dewormed]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Dewormed" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Sterilized]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Sterilized" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Health]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Health" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Quantity]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Quantity" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Fee]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fee" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[State]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="State" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RescuerID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="RescuerID" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task - Raw_Data.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Task - Raw_Data\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Task - Raw_Data\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\DataTask-FactTable"
       DTS:CreationName="Microsoft.Pipeline"
@@ -4111,6 +5313,23 @@ where [refTable].[Pet_Vaccinated] = ?</property>
               startId="Package\DataTask-FactTable\Lookup State.Outputs[Lookup Match Output]" />
           </paths>
         </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{0291CEFB-23AB-4862-AB34-343DD21A5C61}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{34474BF1-E04E-4563-AC27-E6BFD8F884B2}"
+          SQLTask:SqlStatementSource="-- CREATE DATABASE PetFinder&#xA;DROP DATABASE IF EXISTS Pet_Finder;&#xA;CREATE DATABASE Pet_Finder;&#xA;USE Pet_Finder;&#xA;&#xA;&#xA;-- Dimension tables&#xA;DROP TABLE IF EXISTS Dim_Type;&#xA;CREATE TABLE Dim_Type (&#xA;&#x9;Pet_Type_ID INT PRIMARY KEY IDENTITY(1,1),&#xA;&#x9;Pet_Type NVARCHAR(255)&#xA;);&#xA;&#xA;DROP TABLE IF EXISTS Dim_Breed;&#xA;CREATE TABLE Dim_Breed (&#xA;&#x9;Pet_Breed_ID INT PRIMARY KEY IDENTITY(1,1),&#xA;&#x9;Pet_Breed NVARCHAR(255)&#xA;);&#xA;&#xA;DROP TABLE IF EXISTS Dim_Color;&#xA;CREATE TABLE Dim_Color (&#xA;&#x9;Pet_Color_ID INT PRIMARY KEY IDENTITY(1,1),&#xA;&#x9;Pet_Color NVARCHAR(255)&#xA;);&#xA;&#xA;DROP TABLE IF EXISTS Dim_MaturitySize;&#xA;CREATE TABLE Dim_MaturitySize (&#xA;&#x9;Pet_MaturitySize_ID INT PRIMARY KEY IDENTITY(1,1),&#xA;&#x9;Pet_Size NVARCHAR(255)&#xA;);&#xA;&#xA;DROP TABLE IF EXISTS Dim_FurLength;&#xA;CREATE TABLE Dim_FurLength (&#xA;&#x9;Pet_Furlength_ID INT PRIMARY KEY IDENTITY(1,1),&#xA;&#x9;Pet_Furlength NVARCHAR(255)&#xA;);&#xA;&#xA;DROP TABLE IF EXISTS Dim_Vaccinated;&#xA;CREATE TABLE Dim_Vaccinated (&#xA;&#x9;Pet_Vaccinated_ID INT PRIMARY KEY IDENTITY(1,1),&#xA;&#x9;Pet_Vaccinated NVARCHAR(255)&#xA;);&#xA;&#xA;DROP TABLE IF EXISTS Dim_Vaccinated;&#xA;CREATE TABLE Dim_Vaccinated (&#xA;&#x9;Pet_Vaccinated_ID INT PRIMARY KEY IDENTITY(1,1),&#xA;&#x9;Pet_Vaccinated NVARCHAR(255)&#xA;);&#xA;&#xA;DROP TABLE IF EXISTS Dim_Dewormed;&#xA;CREATE TABLE Dim_Dewormed (&#xA;&#x9;Pet_Dewormed_ID INT PRIMARY KEY IDENTITY(1,1),&#xA;&#x9;Pet_Dewormed NVARCHAR(255)&#xA;);&#xA;&#xA;DROP TABLE IF EXISTS Dim_Sterilized;&#xA;CREATE TABLE Dim_Sterilized (&#xA;&#x9;Pet_Sterlized_ID INT PRIMARY KEY IDENTITY(1,1),&#xA;&#x9;Pet_Sterilized NVARCHAR(255)&#xA;)&#xA;&#xA;DROP TABLE IF EXISTS Dim_Rescuer;&#xA;CREATE TABLE Dim_Rescuer (&#xA;    RescuerID INT PRIMARY KEY IDENTITY(1,1),&#xA;&#x9;RescuerName NVARCHAR(255)&#xA;);&#xA;&#xA;DROP TABLE IF EXISTS Dim_State;&#xA;CREATE TABLE Dim_State (&#xA;    StateID INT PRIMARY KEY IDENTITY(1,1),&#xA;    StateName NVARCHAR(255)&#xA;);&#xA;&#xA;-- Fact Table&#xA;DROP TABLE IF EXISTS Fact_Pet;&#xA;CREATE TABLE Fact_Pet (&#xA;    PetID INT PRIMARY KEY,&#xA;    Pet_Type_ID INT REFERENCES DIM_Type(Pet_Type_ID),&#xA;&#x9;Age INT,&#xA;&#x9;Pet_Breed1_ID INT,&#xA;&#x9;Pet_Breed2_ID INT,&#xA;&#x9;Pet_Color1_ID INT,&#xA;&#x9;Pet_Color2_ID INT,&#xA;&#x9;Pet_Color3_ID INT,&#xA;&#x9;Pet_MaturitySize_ID INT,&#xA;&#x9;Pet_FurLength_ID INT,&#xA;&#x9;Pet_Vaccinated_ID INT,&#xA;&#x9;Pet_Dewormed_ID INT,&#xA;&#x9;Pet_Sterilized_ID INT,&#xA;&#x9;Quantity INT,&#xA;    Fee INT,&#xA;&#x9;StateID INT,&#xA;&#x9;RescuerID INT,&#xA;&#xA;&#x9;FOREIGN KEY (Pet_Type_ID) REFERENCES Dim_Type(Pet_Type_ID),&#xA;    FOREIGN KEY (Pet_Breed1_ID) REFERENCES Dim_Breed(Pet_Breed_ID),&#xA;&#x9;FOREIGN KEY (Pet_Breed2_ID) REFERENCES Dim_Breed(Pet_Breed_ID),&#xA;&#x9;FOREIGN KEY (Pet_Color1_ID) REFERENCES Dim_Color(Pet_Color_ID),&#xA;&#x9;FOREIGN KEY (Pet_Color2_ID) REFERENCES Dim_Color(Pet_Color_ID),&#xA;&#x9;FOREIGN KEY (Pet_Color3_ID) REFERENCES Dim_Color(Pet_Color_ID),&#xA;&#x9;FOREIGN KEY (Pet_MaturitySize_ID) REFERENCES Dim_MaturitySize(Pet_MaturitySize_ID),&#xA;&#x9;FOREIGN KEY (Pet_FurLength_ID) REFERENCES Dim_FurLength(Pet_FurLength_ID),&#xA;&#x9;FOREIGN KEY (Pet_Vaccinated_ID) REFERENCES Dim_Vaccinated(Pet_Vaccinated_ID),&#xA;&#x9;FOREIGN KEY (Pet_Dewormed_ID) REFERENCES Dim_Dewormed(Pet_Dewormed_ID),&#xA;&#x9;FOREIGN KEY (Pet_Sterilized_ID) REFERENCES Dim_Sterilized(Pet_Sterlized_ID),&#xA;    FOREIGN KEY (RescuerID) REFERENCES Dim_Rescuer(RescuerID),&#xA;    FOREIGN KEY (StateID) REFERENCES Dim_State(StateID)&#xA;);&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -10708,6 +11927,14 @@ where [refTable].[Pet_Vaccinated] = ?</property>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{2ABC1A23-EA17-441C-9858-314D6D984079}"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Data Flow Task - Raw_Data" />
+    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
       DTS:DTSID="{37456317-4F07-4E37-8F97-91F38008EDE8}"
@@ -10715,6 +11942,14 @@ where [refTable].[Pet_Vaccinated] = ?</property>
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
       DTS:To="Package\DataTask-FactTable" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{B36A68B4-295C-4F66-89DA-DC2DE337692C}"
+      DTS:From="Package\Data Flow Task - Raw_Data"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Parallel Dimensional Table" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -10731,15 +11966,47 @@ where [refTable].[Pet_Vaccinated] = ?</property>
         <NodeLayout
           Size="172.8,41.6"
           Id="Package\DataTask-FactTable"
-          TopLeft="471.428552695683,549.714290083022" />
+          TopLeft="517.261884207764,678.269846660245" />
+        <NodeLayout
+          Size="208.8,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed"
+          TopLeft="278.961893645166,18.5333336777155" />
+        <NodeLayout
+          Size="205.6,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color"
+          TopLeft="512.790454288135,21.3904766529325" />
+        <NodeLayout
+          Size="231.2,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Dewormed"
+          TopLeft="267.057132213456,184.43809690097" />
+        <NodeLayout
+          Size="228,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_FurLength"
+          TopLeft="16.9666370961414,189.066666942173" />
+        <NodeLayout
+          Size="238.4,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_MaturitySize"
+          TopLeft="9.82378023711577,104.876190082611" />
+        <NodeLayout
+          Size="220,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Rescuer"
+          TopLeft="491.361883711059,271.485716735749" />
+        <NodeLayout
+          Size="205.6,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_State"
+          TopLeft="512.790454288135,186.057144628252" />
+        <NodeLayout
+          Size="215.2,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized"
+          TopLeft="509.219025858623,99.3904772728207" />
         <NodeLayout
           Size="230.4,53.6"
           Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Type"
           TopLeft="15.0380582737562,13.6857155579613" />
         <NodeLayout
-          Size="238.4,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_MaturitySize"
-          TopLeft="9.82378023711577,104.876190082611" />
+          Size="232.8,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Vaccinated"
+          TopLeft="267.057132213457,102.723810537278" />
         <EdgeLayout
           Id="Package\Parallel Dimensional Table.PrecedenceConstraints[Constraint]"
           TopLeft="129.630919255436,67.2857155579613">
@@ -10762,10 +12029,6 @@ where [refTable].[Pet_Vaccinated] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="228,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_FurLength"
-          TopLeft="16.9666370961414,189.066666942173" />
         <EdgeLayout
           Id="Package\Parallel Dimensional Table.PrecedenceConstraints[Constraint 1]"
           TopLeft="129.995208666629,146.476190082611">
@@ -10788,18 +12051,6 @@ where [refTable].[Pet_Vaccinated] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="208.8,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed"
-          TopLeft="278.961893645166,18.5333336777155" />
-        <NodeLayout
-          Size="232.8,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Vaccinated"
-          TopLeft="267.057132213457,102.723810537278" />
-        <NodeLayout
-          Size="231.2,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Dewormed"
-          TopLeft="267.057132213456,184.43809690097" />
         <EdgeLayout
           Id="Package\Parallel Dimensional Table.PrecedenceConstraints[Constraint 2]"
           TopLeft="383.409512929311,60.1333336777155">
@@ -10844,14 +12095,6 @@ where [refTable].[Pet_Vaccinated] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="205.6,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color"
-          TopLeft="512.790454288135,21.3904766529325" />
-        <NodeLayout
-          Size="215.2,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized"
-          TopLeft="509.219025858623,99.3904772728207" />
         <EdgeLayout
           Id="Package\Parallel Dimensional Table.PrecedenceConstraints[Constraint 4]"
           TopLeft="616.204740073379,62.9904766529325">
@@ -10874,10 +12117,6 @@ where [refTable].[Pet_Vaccinated] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="205.6,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_State"
-          TopLeft="512.790454288135,186.057144628252" />
         <EdgeLayout
           Id="Package\Parallel Dimensional Table.PrecedenceConstraints[Constraint 5]"
           TopLeft="616.204740073379,140.990477272821">
@@ -10900,10 +12139,6 @@ where [refTable].[Pet_Vaccinated] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="220,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Rescuer"
-          TopLeft="491.361883711059,271.485716735749" />
         <EdgeLayout
           Id="Package\Parallel Dimensional Table.PrecedenceConstraints[Constraint 6]"
           TopLeft="615.590454288135,227.657144628252">
@@ -10944,33 +12179,85 @@ where [refTable].[Pet_Vaccinated] = ?</property>
           PanelSize="741.6,368"
           Size="741.6,411.2"
           Id="Package\Parallel Dimensional Table"
-          TopLeft="167.8571361871,89.142857851301" />
+          TopLeft="216.607134249949,219.359525552837" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="538.6571361871,500.342857851301">
+          TopLeft="587.407134249949,630.559525552837">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="19.1714165085839,49.3714322317212"
+              EndConnector="16.2547499578145,47.7103211074083"
               Start="0,0"
-              End="19.1714165085839,41.8714322317212">
+              End="16.2547499578145,40.2103211074083">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.6857161158606" />
+                    End="0,19.8551605537041" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.6857161158606"
-                    Point2="0,24.6857161158606"
-                    Point3="4,24.6857161158606" />
+                    Point1="0,19.8551605537041"
+                    Point2="0,23.8551605537041"
+                    Point3="4,23.8551605537041" />
                   <mssgle:LineSegment
-                    End="15.1714165085839,24.6857161158606" />
+                    End="12.2547499578145,23.8551605537041" />
                   <mssgle:CubicBezierSegment
-                    Point1="15.1714165085839,24.6857161158606"
-                    Point2="19.1714165085839,24.6857161158606"
-                    Point3="19.1714165085839,28.6857161158606" />
+                    Point1="12.2547499578145,23.8551605537041"
+                    Point2="16.2547499578145,23.8551605537041"
+                    Point3="16.2547499578145,27.8551605537041" />
                   <mssgle:LineSegment
-                    End="19.1714165085839,41.8714322317212" />
+                    End="16.2547499578145,40.2103211074083" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\Execute SQL Task"
+          TopLeft="501.04164675706,5.41666670971447" />
+        <NodeLayout
+          Size="208,41.6"
+          Id="Package\Data Flow Task - Raw_Data"
+          TopLeft="485.833314028052,110.066667541398" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="586.637480392556,47.0166667097145">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,63.0500008316834"
+              Start="0,0"
+              End="0,55.5500008316834">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.5500008316834" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="588.620224139001,151.666667541398">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,67.6928580114389"
+              Start="0,0"
+              End="0,60.1928580114389">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,60.1928580114389" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11028,6 +12315,10 @@ where [refTable].[Pet_Vaccinated] = ?</property>
           Id="Package\DataTask-FactTable\Lookup State"
           TopLeft="787.939370428674,262.557576074408" />
         <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\DataTask-FactTable\OLE DB Destination"
+          TopLeft="962,262" />
+        <NodeLayout
           Size="148.8,41.6"
           Id="Package\DataTask-FactTable\Lookup Breed2"
           TopLeft="601.242402056252,94.9090912472118" />
@@ -11039,6 +12330,30 @@ where [refTable].[Pet_Vaccinated] = ?</property>
           Size="131.2,41.6"
           Id="Package\DataTask-FactTable\Lookup Dewormed"
           TopLeft="421.363626610149,263.939390912586" />
+        <EdgeLayout
+          Id="Package\DataTask-FactTable.Paths[Lookup Match Output11]"
+          TopLeft="927.139370428674,283.078788037204">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="34.8606295713258,0"
+              Start="0,0"
+              End="27.3606295713258,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="27.3606295713258,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-34.5110719330871,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\DataTask-FactTable.Paths[Lookup Match Output10]"
           TopLeft="732.709069686226,282.65454644261">
@@ -11322,34 +12637,8 @@ where [refTable].[Pet_Vaccinated] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\DataTask-FactTable\OLE DB Destination"
-          TopLeft="962,262" />
-        <EdgeLayout
-          Id="Package\DataTask-FactTable.Paths[Lookup Match Output11]"
-          TopLeft="927.139370428674,283.078788037204">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="34.8606295713258,0"
-              Start="0,0"
-              End="27.3606295713258,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="27.3606295713258,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-34.5110719330871,5,96.3827734375,11.609375"
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -11362,7 +12651,7 @@ where [refTable].[Pet_Vaccinated] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11372,7 +12661,7 @@ where [refTable].[Pet_Vaccinated] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11390,7 +12679,7 @@ where [refTable].[Pet_Vaccinated] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q3:int">0</Value>
+          type="q3:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11403,7 +12692,7 @@ where [refTable].[Pet_Vaccinated] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11413,7 +12702,7 @@ where [refTable].[Pet_Vaccinated] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11426,7 +12715,7 @@ where [refTable].[Pet_Vaccinated] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11436,7 +12725,7 @@ where [refTable].[Pet_Vaccinated] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11449,7 +12738,7 @@ where [refTable].[Pet_Vaccinated] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11459,7 +12748,7 @@ where [refTable].[Pet_Vaccinated] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11472,7 +12761,7 @@ where [refTable].[Pet_Vaccinated] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11482,7 +12771,7 @@ where [refTable].[Pet_Vaccinated] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11495,7 +12784,7 @@ where [refTable].[Pet_Vaccinated] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11505,7 +12794,7 @@ where [refTable].[Pet_Vaccinated] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11518,7 +12807,7 @@ where [refTable].[Pet_Vaccinated] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11528,7 +12817,7 @@ where [refTable].[Pet_Vaccinated] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11541,7 +12830,7 @@ where [refTable].[Pet_Vaccinated] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11551,7 +12840,7 @@ where [refTable].[Pet_Vaccinated] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11564,7 +12853,7 @@ where [refTable].[Pet_Vaccinated] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11574,53 +12863,7 @@ where [refTable].[Pet_Vaccinated] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DataTask-FactTable\Lookup Breed2">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[Dim_Breed]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DataTask-FactTable\Lookup Dewormed">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[Dim_Dewormed]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11640,53 +12883,95 @@ where [refTable].[Pet_Vaccinated] = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DataTask-FactTable\Lookup Breed2">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Dim_Breed]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DataTask-FactTable\Lookup Dewormed">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Dim_Dewormed]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Parallel Dimensional Table\Data Flow Task -Dim_Type">
+    design-time-name="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Type\Sort"
-          TopLeft="266.666656070286,52.0000004132589" />
+          Size="160,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed\Flat File Source 1"
+          TopLeft="3,211.733333347109" />
         <NodeLayout
           Size="112.8,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Type\Lookup"
-          TopLeft="452.999982217948,64.765413126992" />
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed\Lookup"
+          TopLeft="475.833316213555,102.266667479409" />
         <NodeLayout
-          Size="151.2,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Type\Flat File Source"
-          TopLeft="74.9999970197679,51.1333337397046" />
+          Size="97.6,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed\Sort"
+          TopLeft="336.666656070286,115.066667128139" />
         <NodeLayout
           Size="171.2,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Type\OLE DB Destination"
-          TopLeft="502.166649315093,230.498747300618" />
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed\OLE DB Destination"
+          TopLeft="658,111" />
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed\Flat File Source"
+          TopLeft="20,30" />
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed\Union All"
+          TopLeft="191,120" />
         <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Type.Paths[Sort Output]"
-          TopLeft="364.266656070286,72.8000004132589">
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed.Paths[Union All Output 1]"
+          TopLeft="311,138.33333356407">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="88.7333261476624,12.7654127137331"
+              EndConnector="25.666656070286,0"
               Start="0,0"
-              End="81.2333261476624,12.7654127137331">
+              End="18.166656070286,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="40.3666630738312,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="40.3666630738312,0"
-                    Point2="44.3666630738312,0"
-                    Point3="44.3666630738312,4" />
-                  <mssgle:LineSegment
-                    End="44.3666630738312,8.76541271373311" />
-                  <mssgle:CubicBezierSegment
-                    Point1="44.3666630738312,8.76541271373311"
-                    Point2="44.3666630738312,12.7654127137331"
-                    Point3="48.3666630738312,12.7654127137331" />
-                  <mssgle:LineSegment
-                    End="81.2333261476624,12.7654127137331" />
+                    End="18.166656070286,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11698,7 +12983,440 @@ where [refTable].[Pet_Vaccinated] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Type.Paths[Lookup No Match Output]"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed.Paths[Sort Output]"
+          TopLeft="434.266656070286,135.866667128139">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="41.566660143269,-12.7999996487301"
+              Start="0,0"
+              End="34.066660143269,-12.7999996487301">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="16.7833300716345,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="16.7833300716345,0"
+                    Point2="20.7833300716345,0"
+                    Point3="20.7833300716345,-4" />
+                  <mssgle:LineSegment
+                    End="20.7833300716345,-8.79999964873012" />
+                  <mssgle:CubicBezierSegment
+                    Point1="20.7833300716345,-8.79999964873012"
+                    Point2="20.7833300716345,-12.7999996487301"
+                    Point3="24.7833300716345,-12.7999996487301" />
+                  <mssgle:LineSegment
+                    End="34.066660143269,-12.7999996487301" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed.Paths[Lookup No Match Output]"
+          TopLeft="588.633316213555,123.066667479409">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="69.366683786445,8.73333252059102"
+              Start="0,0"
+              End="61.866683786445,8.73333252059102">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="30.6833418932225,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="30.6833418932225,0"
+                    Point2="34.6833418932225,0"
+                    Point3="34.6833418932225,4" />
+                  <mssgle:LineSegment
+                    End="34.6833418932225,4.73333252059102" />
+                  <mssgle:CubicBezierSegment
+                    Point1="34.6833418932225,4.73333252059102"
+                    Point2="34.6833418932225,8.73333252059102"
+                    Point3="38.6833418932225,8.73333252059102" />
+                  <mssgle:LineSegment
+                    End="61.866683786445,8.73333252059102" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-21.1230448255275,-17.609375,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed.Paths[Flat File Source Output1]"
+          TopLeft="83,211.733333347109">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="168,-50.133333347109"
+              Start="0,0"
+              End="168,-42.633333347109">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-21.0666666735545" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-21.0666666735545"
+                    Point2="0,-25.0666666735545"
+                    Point3="4,-25.0666666735545" />
+                  <mssgle:LineSegment
+                    End="164,-25.0666666735545" />
+                  <mssgle:CubicBezierSegment
+                    Point1="164,-25.0666666735545"
+                    Point2="168,-25.0666666735545"
+                    Point3="168,-29.0666666735545" />
+                  <mssgle:LineSegment
+                    End="168,-42.633333347109" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed.Paths[Flat File Source Output]"
+          TopLeft="95.6,71.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="155.4,48.4"
+              Start="0,0"
+              End="155.4,40.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.2" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.2"
+                    Point2="0,24.2"
+                    Point3="4,24.2" />
+                  <mssgle:LineSegment
+                    End="151.4,24.2" />
+                  <mssgle:CubicBezierSegment
+                    Point1="151.4,24.2"
+                    Point2="155.4,24.2"
+                    Point3="155.4,28.2" />
+                  <mssgle:LineSegment
+                    End="155.4,40.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="108.8,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color\Color2"
+          TopLeft="31,127.366668409242" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color\OLE DB Destination"
+          TopLeft="944,137" />
+        <NodeLayout
+          Size="108.8,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color\Color3"
+          TopLeft="26,216.366668409242" />
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color\Union All"
+          TopLeft="309,133" />
+        <NodeLayout
+          Size="112.8,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color\Lookup"
+          TopLeft="733.833316213555,122.266667479409" />
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color\Sort"
+          TopLeft="559.666656070286,125.066667128139" />
+        <NodeLayout
+          Size="108.8,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color\Color1"
+          TopLeft="34,42" />
+        <EdgeLayout
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color.Paths[Union All Output 1]"
+          TopLeft="429,149.83333356407">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="130.666656070286,0"
+              Start="0,0"
+              End="123.166656070286,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="123.166656070286,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color.Paths[Sort Output]"
+          TopLeft="657.266656070286,144.466667303774">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="76.566660143269,0"
+              Start="0,0"
+              End="69.066660143269,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="69.066660143269,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color.Paths[Lookup No Match Output]"
+          TopLeft="846.633316213555,143.066667479409">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="97.3666837864449,14.733332520591"
+              Start="0,0"
+              End="89.8666837864449,14.733332520591">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="44.6833418932225,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="44.6833418932225,0"
+                    Point2="48.6833418932225,0"
+                    Point3="48.6833418932225,4" />
+                  <mssgle:LineSegment
+                    End="48.6833418932225,10.733332520591" />
+                  <mssgle:CubicBezierSegment
+                    Point1="48.6833418932225,10.733332520591"
+                    Point2="48.6833418932225,14.733332520591"
+                    Point3="52.6833418932225,14.733332520591" />
+                  <mssgle:LineSegment
+                    End="89.8666837864449,14.733332520591" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-7.1230448255275,-17.609375,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color.Paths[Flat File Source Output2]"
+          TopLeft="80.4,216.366668409242">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="288.6,-41.766668409242"
+              Start="0,0"
+              End="288.6,-34.266668409242">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-16.883334204621" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-16.883334204621"
+                    Point2="0,-20.883334204621"
+                    Point3="4,-20.883334204621" />
+                  <mssgle:LineSegment
+                    End="284.6,-20.883334204621" />
+                  <mssgle:CubicBezierSegment
+                    Point1="284.6,-20.883334204621"
+                    Point2="288.6,-20.883334204621"
+                    Point3="288.6,-24.883334204621" />
+                  <mssgle:LineSegment
+                    End="288.6,-34.266668409242" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color.Paths[Flat File Source Output1]"
+          TopLeft="139.8,150.983334204621">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="169.2,0"
+              Start="0,0"
+              End="161.7,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="161.7,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color.Paths[Flat File Source Output]"
+          TopLeft="88.4,83.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="280.6,49.4"
+              Start="0,0"
+              End="280.6,41.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.7"
+                    Point2="0,24.7"
+                    Point3="4,24.7" />
+                  <mssgle:LineSegment
+                    End="276.6,24.7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="276.6,24.7"
+                    Point2="280.6,24.7"
+                    Point3="280.6,28.7" />
+                  <mssgle:LineSegment
+                    End="280.6,41.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Parallel Dimensional Table\Data Flow Task -Dim_Dewormed">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Dewormed\Sort"
+          TopLeft="266.666656070286,51.0000004132589" />
+        <NodeLayout
+          Size="112.8,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Dewormed\Lookup"
+          TopLeft="452.999982217948,64.765413126992" />
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Dewormed\Flat File Source"
+          TopLeft="74.9999970197679,44.1333337397046" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Dewormed\OLE DB Destination"
+          TopLeft="502.166649315093,230.498747300618" />
+        <EdgeLayout
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Dewormed.Paths[Sort Output]"
+          TopLeft="364.266656070286,71.8000004132589">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="88.733326147662,13.7654127137331"
+              Start="0,0"
+              End="81.233326147662,13.7654127137331">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="40.366663073831,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="40.366663073831,0"
+                    Point2="44.366663073831,0"
+                    Point3="44.366663073831,4" />
+                  <mssgle:LineSegment
+                    End="44.366663073831,9.7654127137331" />
+                  <mssgle:CubicBezierSegment
+                    Point1="44.366663073831,9.7654127137331"
+                    Point2="44.366663073831,13.7654127137331"
+                    Point3="48.366663073831,13.7654127137331" />
+                  <mssgle:LineSegment
+                    End="81.233326147662,13.7654127137331" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Dewormed.Paths[Lookup No Match Output]"
           TopLeft="509.399982217948,106.365413126992">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11734,8 +13452,8 @@ where [refTable].[Pet_Vaccinated] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Type.Paths[Flat File Source Output]"
-          TopLeft="226.199997019768,72.3666670764817">
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Dewormed.Paths[Flat File Source Output]"
+          TopLeft="226.199997019768,68.3666670764817">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -11759,18 +13477,145 @@ where [refTable].[Pet_Vaccinated] = ?</property>
         </EdgeLayout>
         <AnnotationLayout
           Text=""
-          ParentId="Package\Parallel Dimensional Table\Data Flow Task -Dim_Type"
+          ParentId="Package\Parallel Dimensional Table\Data Flow Task -Dim_Dewormed"
           FontInfo="{assembly:Null}"
           Size="28.8,NaN"
           Id="61d0f1ad-7f60-430d-8728-f4502b043067"
           TopLeft="92,182" />
         <AnnotationLayout
           Text="x"
-          ParentId="Package\Parallel Dimensional Table\Data Flow Task -Dim_Type"
+          ParentId="Package\Parallel Dimensional Table\Data Flow Task -Dim_Dewormed"
           FontInfo="{assembly:Null}"
           Size="34.4,NaN"
           Id="45b3f130-56c6-4586-a96c-6c07a88e4589"
           TopLeft="920.833296742706,500.06667064084" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Parallel Dimensional Table\Data Flow Task -Dim_FurLength">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_FurLength\Sort"
+          TopLeft="266.666656070286,58.0666671281391" />
+        <NodeLayout
+          Size="112.8,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_FurLength\Lookup"
+          TopLeft="430.833316213555,102.266667479409" />
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_FurLength\Flat File Source"
+          TopLeft="74.9999970197679,51.1333337397046" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_FurLength\OLE DB Destination"
+          TopLeft="509,250" />
+        <EdgeLayout
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_FurLength.Paths[Sort Output]"
+          TopLeft="364.266656070286,78.8666671281391">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="66.5666601432695,44.20000035127"
+              Start="0,0"
+              End="59.0666601432695,44.20000035127">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="29.2833300716347,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="29.2833300716347,0"
+                    Point2="33.2833300716347,0"
+                    Point3="33.2833300716347,4" />
+                  <mssgle:LineSegment
+                    End="33.2833300716347,40.20000035127" />
+                  <mssgle:CubicBezierSegment
+                    Point1="33.2833300716347,40.20000035127"
+                    Point2="33.2833300716347,44.20000035127"
+                    Point3="37.2833300716347,44.20000035127" />
+                  <mssgle:LineSegment
+                    End="59.0666601432695,44.20000035127" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_FurLength.Paths[Lookup No Match Output]"
+          TopLeft="487.233316213555,143.866667479409">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="107.366683786445,106.133332520591"
+              Start="0,0"
+              End="107.366683786445,98.633332520591">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.0666662602955" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,49.0666662602955"
+                    Point2="0,53.0666662602955"
+                    Point3="4,53.0666662602955" />
+                  <mssgle:LineSegment
+                    End="103.366683786445,53.0666662602955" />
+                  <mssgle:CubicBezierSegment
+                    Point1="103.366683786445,53.0666662602955"
+                    Point2="107.366683786445,53.0666662602955"
+                    Point3="107.366683786445,57.0666662602955" />
+                  <mssgle:LineSegment
+                    End="107.366683786445,98.633332520591" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-2.12304482552748,58.0666662602955,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_FurLength.Paths[Flat File Source Output]"
+          TopLeft="226.199997019768,75.4000004339218">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="40.4666590505181,0"
+              Start="0,0"
+              End="32.9666590505181,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="32.9666590505181,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text=""
+          ParentId="Package\Parallel Dimensional Table\Data Flow Task -Dim_FurLength"
+          FontInfo="{assembly:Null}"
+          Size="28.8,NaN"
+          Id="61d0f1ad-7f60-430d-8728-f4502b043067"
+          TopLeft="92,182" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -11909,28 +13754,28 @@ where [refTable].[Pet_Vaccinated] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <TaskHost
-    design-time-name="Package\Parallel Dimensional Table\Data Flow Task -Dim_FurLength">
+    design-time-name="Package\Parallel Dimensional Table\Data Flow Task -Dim_Rescuer">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="112.8,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_FurLength\Lookup"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Rescuer\Lookup"
           TopLeft="430.833316213555,102.266667479409" />
         <NodeLayout
-          Size="151.2,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_FurLength\Flat File Source"
-          TopLeft="74.9999970197679,51.1333337397046" />
-        <NodeLayout
           Size="97.6,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_FurLength\Sort"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Rescuer\Sort"
           TopLeft="266.666656070286,58.0666671281391" />
         <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Rescuer\Flat File Source"
+          TopLeft="74.9999970197679,51.1333337397046" />
+        <NodeLayout
           Size="171.2,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_FurLength\OLE DB Destination"
-          TopLeft="509,250" />
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Rescuer\OLE DB Destination"
+          TopLeft="475,197" />
         <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_FurLength.Paths[Sort Output]"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Rescuer.Paths[Sort Output]"
           TopLeft="364.266656070286,78.8666671281391">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11966,7 +13811,170 @@ where [refTable].[Pet_Vaccinated] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_FurLength.Paths[Flat File Source Output]"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Rescuer.Paths[Lookup No Match Output]"
+          TopLeft="487.233316213555,143.866667479409">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="73.366683786445,53.133332520591"
+              Start="0,0"
+              End="73.366683786445,45.633332520591">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.5666662602955" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.5666662602955"
+                    Point2="0,26.5666662602955"
+                    Point3="4,26.5666662602955" />
+                  <mssgle:LineSegment
+                    End="69.366683786445,26.5666662602955" />
+                  <mssgle:CubicBezierSegment
+                    Point1="69.366683786445,26.5666662602955"
+                    Point2="73.366683786445,26.5666662602955"
+                    Point3="73.366683786445,30.5666662602955" />
+                  <mssgle:LineSegment
+                    End="73.366683786445,45.633332520591" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-19.1230448255275,31.5666662602955,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Rescuer.Paths[Flat File Source Output]"
+          TopLeft="226.199997019768,75.4000004339219">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="40.4666590505181,0"
+              Start="0,0"
+              End="32.9666590505181,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="32.9666590505181,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text=""
+          ParentId="Package\Parallel Dimensional Table\Data Flow Task -Dim_Rescuer"
+          FontInfo="{assembly:Null}"
+          Size="28.8,NaN"
+          Id="61d0f1ad-7f60-430d-8728-f4502b043067"
+          TopLeft="92,182" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Parallel Dimensional Table\Data Flow Task -Dim_State">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="112.8,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_State\Lookup"
+          TopLeft="430.833316213555,102.266667479409" />
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_State\Sort"
+          TopLeft="266.666656070286,58.0666671281391" />
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_State\Flat File Source"
+          TopLeft="74.9999970197679,51.1333337397046" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_State\OLE DB Destination"
+          TopLeft="555,210" />
+        <EdgeLayout
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_State.Paths[Sort Output]"
+          TopLeft="364.266656070286,78.8666671281391">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="66.5666601432695,44.20000035127"
+              Start="0,0"
+              End="59.0666601432695,44.20000035127">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="29.2833300716347,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="29.2833300716347,0"
+                    Point2="33.2833300716347,0"
+                    Point3="33.2833300716347,4" />
+                  <mssgle:LineSegment
+                    End="33.2833300716347,40.20000035127" />
+                  <mssgle:CubicBezierSegment
+                    Point1="33.2833300716347,40.20000035127"
+                    Point2="33.2833300716347,44.20000035127"
+                    Point3="37.2833300716347,44.20000035127" />
+                  <mssgle:LineSegment
+                    End="59.0666601432695,44.20000035127" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_State.Paths[Lookup No Match Output]"
+          TopLeft="487.233316213555,143.866667479409">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="153.366683786445,66.133332520591"
+              Start="0,0"
+              End="153.366683786445,58.633332520591">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.0666662602955" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.0666662602955"
+                    Point2="0,33.0666662602955"
+                    Point3="4,33.0666662602955" />
+                  <mssgle:LineSegment
+                    End="149.366683786445,33.0666662602955" />
+                  <mssgle:CubicBezierSegment
+                    Point1="149.366683786445,33.0666662602955"
+                    Point2="153.366683786445,33.0666662602955"
+                    Point3="153.366683786445,37.0666662602955" />
+                  <mssgle:LineSegment
+                    End="153.366683786445,58.633332520591" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="20.8769551744725,38.0666662602955,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_State.Paths[Flat File Source Output]"
           TopLeft="226.199997019768,75.4000004339218">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11989,45 +13997,9 @@ where [refTable].[Pet_Vaccinated] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_FurLength.Paths[Lookup No Match Output]"
-          TopLeft="487.233316213555,143.866667479409">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="107.366683786445,106.133332520591"
-              Start="0,0"
-              End="107.366683786445,98.633332520591">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,49.0666662602955" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,49.0666662602955"
-                    Point2="0,53.0666662602955"
-                    Point3="4,53.0666662602955" />
-                  <mssgle:LineSegment
-                    End="103.366683786445,53.0666662602955" />
-                  <mssgle:CubicBezierSegment
-                    Point1="103.366683786445,53.0666662602955"
-                    Point2="107.366683786445,53.0666662602955"
-                    Point3="107.366683786445,57.0666662602955" />
-                  <mssgle:LineSegment
-                    End="107.366683786445,98.633332520591" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-2.12304482552748,58.0666662602955,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <AnnotationLayout
           Text=""
-          ParentId="Package\Parallel Dimensional Table\Data Flow Task -Dim_FurLength"
+          ParentId="Package\Parallel Dimensional Table\Data Flow Task -Dim_State"
           FontInfo="{assembly:Null}"
           Size="28.8,NaN"
           Id="61d0f1ad-7f60-430d-8728-f4502b043067"
@@ -12036,60 +14008,52 @@ where [refTable].[Pet_Vaccinated] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <TaskHost
-    design-time-name="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed">
+    design-time-name="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="160,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed\Flat File Source 1"
-          TopLeft="3,211.733333347109" />
-        <NodeLayout
-          Size="120,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed\Union All"
-          TopLeft="191,120" />
+          Size="97.6,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized\Sort"
+          TopLeft="266.666656070286,52.0000004132589" />
         <NodeLayout
           Size="112.8,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed\Lookup"
-          TopLeft="475.833316213555,102.266667479409" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed\OLE DB Destination"
-          TopLeft="658,111" />
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed\Sort"
-          TopLeft="336.666656070286,115.066667128139" />
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized\Lookup"
+          TopLeft="452.999982217948,64.765413126992" />
         <NodeLayout
           Size="151.2,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed\Flat File Source"
-          TopLeft="20,30" />
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized\Flat File Source"
+          TopLeft="74.9999970197679,51.1333337397046" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized\OLE DB Destination"
+          TopLeft="502.166649315093,229.498747300618" />
         <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed.Paths[Sort Output]"
-          TopLeft="434.266656070286,135.866667128139">
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized.Paths[Sort Output]"
+          TopLeft="364.266656070286,72.8000004132589">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="41.566660143269,-12.7999996487301"
+              EndConnector="88.7333261476624,12.7654127137331"
               Start="0,0"
-              End="34.066660143269,-12.7999996487301">
+              End="81.2333261476624,12.7654127137331">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="16.7833300716345,0" />
+                    End="40.3666630738312,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="16.7833300716345,0"
-                    Point2="20.7833300716345,0"
-                    Point3="20.7833300716345,-4" />
+                    Point1="40.3666630738312,0"
+                    Point2="44.3666630738312,0"
+                    Point3="44.3666630738312,4" />
                   <mssgle:LineSegment
-                    End="20.7833300716345,-8.79999964873012" />
+                    End="44.3666630738312,8.76541271373311" />
                   <mssgle:CubicBezierSegment
-                    Point1="20.7833300716345,-8.79999964873012"
-                    Point2="20.7833300716345,-12.7999996487301"
-                    Point3="24.7833300716345,-12.7999996487301" />
+                    Point1="44.3666630738312,8.76541271373311"
+                    Point2="44.3666630738312,12.7654127137331"
+                    Point3="48.3666630738312,12.7654127137331" />
                   <mssgle:LineSegment
-                    End="34.066660143269,-12.7999996487301" />
+                    End="81.2333261476624,12.7654127137331" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12101,31 +14065,129 @@ where [refTable].[Pet_Vaccinated] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed.Paths[Flat File Source Output]"
-          TopLeft="95.6,71.6">
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized.Paths[Lookup No Match Output]"
+          TopLeft="509.399982217948,106.365413126992">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="155.4,48.4"
+              EndConnector="78.366667097145,123.133334173626"
               Start="0,0"
-              End="155.4,40.9">
+              End="78.366667097145,115.633334173626">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.2" />
+                    End="0,57.566667086813" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.2"
-                    Point2="0,24.2"
-                    Point3="4,24.2" />
+                    Point1="0,57.566667086813"
+                    Point2="0,61.566667086813"
+                    Point3="4,61.566667086813" />
                   <mssgle:LineSegment
-                    End="151.4,24.2" />
+                    End="74.366667097145,61.566667086813" />
                   <mssgle:CubicBezierSegment
-                    Point1="151.4,24.2"
-                    Point2="155.4,24.2"
-                    Point3="155.4,28.2" />
+                    Point1="74.366667097145,61.566667086813"
+                    Point2="78.366667097145,61.566667086813"
+                    Point3="78.366667097145,65.566667086813" />
                   <mssgle:LineSegment
-                    End="155.4,40.9" />
+                    End="78.366667097145,115.633334173626" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-16.6230531701775,66.566667086813,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized.Paths[Flat File Source Output]"
+          TopLeft="226.199997019768,72.3666670764817">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="40.4666590505181,0"
+              Start="0,0"
+              End="32.9666590505181,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="32.9666590505181,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text=""
+          ParentId="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized"
+          FontInfo="{assembly:Null}"
+          Size="28.8,NaN"
+          Id="61d0f1ad-7f60-430d-8728-f4502b043067"
+          TopLeft="92,182" />
+        <AnnotationLayout
+          Text="x"
+          ParentId="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized"
+          FontInfo="{assembly:Null}"
+          Size="34.4,NaN"
+          Id="45b3f130-56c6-4586-a96c-6c07a88e4589"
+          TopLeft="920.833296742706,500.06667064084" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Parallel Dimensional Table\Data Flow Task -Dim_Type">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Type\Sort"
+          TopLeft="266.666656070286,52.0000004132589" />
+        <NodeLayout
+          Size="112.8,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Type\Lookup"
+          TopLeft="452.999982217948,64.765413126992" />
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Type\Flat File Source"
+          TopLeft="74.9999970197679,51.1333337397046" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Type\OLE DB Destination"
+          TopLeft="502.166649315093,230.498747300618" />
+        <EdgeLayout
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Type.Paths[Sort Output]"
+          TopLeft="364.266656070286,72.8000004132589">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="88.7333261476624,12.7654127137331"
+              Start="0,0"
+              End="81.2333261476624,12.7654127137331">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="40.3666630738312,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="40.3666630738312,0"
+                    Point2="44.3666630738312,0"
+                    Point3="44.3666630738312,4" />
+                  <mssgle:LineSegment
+                    End="44.3666630738312,8.76541271373311" />
+                  <mssgle:CubicBezierSegment
+                    Point1="44.3666630738312,8.76541271373311"
+                    Point2="44.3666630738312,12.7654127137331"
+                    Point3="48.3666630738312,12.7654127137331" />
+                  <mssgle:LineSegment
+                    End="81.2333261476624,12.7654127137331" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12137,67 +14199,55 @@ where [refTable].[Pet_Vaccinated] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed.Paths[Lookup No Match Output]"
-          TopLeft="588.633316213555,123.066667479409">
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Type.Paths[Lookup No Match Output]"
+          TopLeft="509.399982217948,106.365413126992">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="69.366683786445,8.73333252059102"
+              EndConnector="78.3666670971445,124.133334173626"
               Start="0,0"
-              End="61.866683786445,8.73333252059102">
+              End="78.3666670971445,116.633334173626">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="30.6833418932225,0" />
+                    End="0,58.0666670868132" />
                   <mssgle:CubicBezierSegment
-                    Point1="30.6833418932225,0"
-                    Point2="34.6833418932225,0"
-                    Point3="34.6833418932225,4" />
+                    Point1="0,58.0666670868132"
+                    Point2="0,62.0666670868132"
+                    Point3="4,62.0666670868132" />
                   <mssgle:LineSegment
-                    End="34.6833418932225,4.73333252059102" />
+                    End="74.3666670971445,62.0666670868132" />
                   <mssgle:CubicBezierSegment
-                    Point1="34.6833418932225,4.73333252059102"
-                    Point2="34.6833418932225,8.73333252059102"
-                    Point3="38.6833418932225,8.73333252059102" />
+                    Point1="74.3666670971445,62.0666670868132"
+                    Point2="78.3666670971445,62.0666670868132"
+                    Point3="78.3666670971445,66.0666670868132" />
                   <mssgle:LineSegment
-                    End="61.866683786445,8.73333252059102" />
+                    End="78.3666670971445,116.633334173626" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-21.1230448255275,-17.609375,111.6127734375,11.609375"
+              BoundingBox="-16.6230531701777,67.0666670868132,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed.Paths[Flat File Source Output1]"
-          TopLeft="83,211.733333347109">
+          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Type.Paths[Flat File Source Output]"
+          TopLeft="226.199997019768,72.3666670764817">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="168,-50.133333347109"
+              EndConnector="40.4666590505181,0"
               Start="0,0"
-              End="168,-42.633333347109">
+              End="32.9666590505181,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-21.0666666735545" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-21.0666666735545"
-                    Point2="0,-25.0666666735545"
-                    Point3="4,-25.0666666735545" />
-                  <mssgle:LineSegment
-                    End="164,-25.0666666735545" />
-                  <mssgle:CubicBezierSegment
-                    Point1="164,-25.0666666735545"
-                    Point2="168,-25.0666666735545"
-                    Point3="168,-29.0666666735545" />
-                  <mssgle:LineSegment
-                    End="168,-42.633333347109" />
+                    End="32.9666590505181,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12208,30 +14258,20 @@ where [refTable].[Pet_Vaccinated] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed.Paths[Union All Output 1]"
-          TopLeft="311,138.33333356407">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="25.666656070286,0"
-              Start="0,0"
-              End="18.166656070286,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="18.166656070286,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <AnnotationLayout
+          Text=""
+          ParentId="Package\Parallel Dimensional Table\Data Flow Task -Dim_Type"
+          FontInfo="{assembly:Null}"
+          Size="28.8,NaN"
+          Id="61d0f1ad-7f60-430d-8728-f4502b043067"
+          TopLeft="92,182" />
+        <AnnotationLayout
+          Text="x"
+          ParentId="Package\Parallel Dimensional Table\Data Flow Task -Dim_Type"
+          FontInfo="{assembly:Null}"
+          Size="34.4,NaN"
+          Id="45b3f130-56c6-4586-a96c-6c07a88e4589"
+          TopLeft="920.833296742706,500.06667064084" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -12370,52 +14410,32 @@ where [refTable].[Pet_Vaccinated] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <TaskHost
-    design-time-name="Package\Parallel Dimensional Table\Data Flow Task -Dim_Dewormed">
+    design-time-name="Package\Data Flow Task - Raw_Data">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Dewormed\Sort"
-          TopLeft="266.666656070286,51.0000004132589" />
-        <NodeLayout
-          Size="112.8,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Dewormed\Lookup"
-          TopLeft="452.999982217948,64.765413126992" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151.2,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Dewormed\Flat File Source"
-          TopLeft="74.9999970197679,44.1333337397046" />
+          Id="Package\Data Flow Task - Raw_Data\Flat File Source"
+          TopLeft="254.166656566991,67.6000005372366" />
         <NodeLayout
           Size="171.2,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Dewormed\OLE DB Destination"
-          TopLeft="502.166649315093,230.498747300618" />
+          Id="Package\Data Flow Task - Raw_Data\OLE DB Destination"
+          TopLeft="507.499979833763,71.0666672314538" />
         <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Dewormed.Paths[Sort Output]"
-          TopLeft="364.266656070286,71.8000004132589">
+          Id="Package\Data Flow Task - Raw_Data.Paths[Flat File Source Output]"
+          TopLeft="405.366656566991,90.1333338843452">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="88.733326147662,13.7654127137331"
+              EndConnector="102.133323266772,0"
               Start="0,0"
-              End="81.233326147662,13.7654127137331">
+              End="94.633323266772,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="40.366663073831,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="40.366663073831,0"
-                    Point2="44.366663073831,0"
-                    Point3="44.366663073831,4" />
-                  <mssgle:LineSegment
-                    End="44.366663073831,9.7654127137331" />
-                  <mssgle:CubicBezierSegment
-                    Point1="44.366663073831,9.7654127137331"
-                    Point2="44.366663073831,13.7654127137331"
-                    Point3="48.366663073831,13.7654127137331" />
-                  <mssgle:LineSegment
-                    End="81.233326147662,13.7654127137331" />
+                    End="94.633323266772,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12426,687 +14446,6 @@ where [refTable].[Pet_Vaccinated] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Dewormed.Paths[Lookup No Match Output]"
-          TopLeft="509.399982217948,106.365413126992">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="78.3666670971445,124.133334173626"
-              Start="0,0"
-              End="78.3666670971445,116.633334173626">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,58.0666670868132" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,58.0666670868132"
-                    Point2="0,62.0666670868132"
-                    Point3="4,62.0666670868132" />
-                  <mssgle:LineSegment
-                    End="74.3666670971445,62.0666670868132" />
-                  <mssgle:CubicBezierSegment
-                    Point1="74.3666670971445,62.0666670868132"
-                    Point2="78.3666670971445,62.0666670868132"
-                    Point3="78.3666670971445,66.0666670868132" />
-                  <mssgle:LineSegment
-                    End="78.3666670971445,116.633334173626" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-16.6230531701777,67.0666670868132,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Dewormed.Paths[Flat File Source Output]"
-          TopLeft="226.199997019768,68.3666670764817">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="40.4666590505181,0"
-              Start="0,0"
-              End="32.9666590505181,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="32.9666590505181,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <AnnotationLayout
-          Text=""
-          ParentId="Package\Parallel Dimensional Table\Data Flow Task -Dim_Dewormed"
-          FontInfo="{assembly:Null}"
-          Size="28.8,NaN"
-          Id="61d0f1ad-7f60-430d-8728-f4502b043067"
-          TopLeft="92,182" />
-        <AnnotationLayout
-          Text="x"
-          ParentId="Package\Parallel Dimensional Table\Data Flow Task -Dim_Dewormed"
-          FontInfo="{assembly:Null}"
-          Size="34.4,NaN"
-          Id="45b3f130-56c6-4586-a96c-6c07a88e4589"
-          TopLeft="920.833296742706,500.06667064084" />
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="108.8,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color\Color2"
-          TopLeft="31,127.366668409242" />
-        <NodeLayout
-          Size="108.8,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color\Color3"
-          TopLeft="26,216.366668409242" />
-        <NodeLayout
-          Size="112.8,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color\Lookup"
-          TopLeft="733.833316213555,122.266667479409" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color\OLE DB Destination"
-          TopLeft="944,137" />
-        <NodeLayout
-          Size="120,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color\Union All"
-          TopLeft="309,133" />
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color\Sort"
-          TopLeft="559.666656070286,125.066667128139" />
-        <NodeLayout
-          Size="108.8,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color\Color1"
-          TopLeft="34,42" />
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color.Paths[Lookup No Match Output]"
-          TopLeft="846.633316213555,143.066667479409">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="97.3666837864449,14.733332520591"
-              Start="0,0"
-              End="89.8666837864449,14.733332520591">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="44.6833418932225,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="44.6833418932225,0"
-                    Point2="48.6833418932225,0"
-                    Point3="48.6833418932225,4" />
-                  <mssgle:LineSegment
-                    End="48.6833418932225,10.733332520591" />
-                  <mssgle:CubicBezierSegment
-                    Point1="48.6833418932225,10.733332520591"
-                    Point2="48.6833418932225,14.733332520591"
-                    Point3="52.6833418932225,14.733332520591" />
-                  <mssgle:LineSegment
-                    End="89.8666837864449,14.733332520591" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-7.1230448255275,-17.609375,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color.Paths[Union All Output 1]"
-          TopLeft="429,149.83333356407">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="130.666656070286,0"
-              Start="0,0"
-              End="123.166656070286,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="123.166656070286,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color.Paths[Sort Output]"
-          TopLeft="657.266656070286,144.466667303774">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="76.566660143269,0"
-              Start="0,0"
-              End="69.066660143269,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="69.066660143269,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color.Paths[Flat File Source Output2]"
-          TopLeft="80.4,216.366668409242">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="288.6,-41.766668409242"
-              Start="0,0"
-              End="288.6,-34.266668409242">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-16.883334204621" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-16.883334204621"
-                    Point2="0,-20.883334204621"
-                    Point3="4,-20.883334204621" />
-                  <mssgle:LineSegment
-                    End="284.6,-20.883334204621" />
-                  <mssgle:CubicBezierSegment
-                    Point1="284.6,-20.883334204621"
-                    Point2="288.6,-20.883334204621"
-                    Point3="288.6,-24.883334204621" />
-                  <mssgle:LineSegment
-                    End="288.6,-34.266668409242" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color.Paths[Flat File Source Output1]"
-          TopLeft="139.8,150.983334204621">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="169.2,0"
-              Start="0,0"
-              End="161.7,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="161.7,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color.Paths[Flat File Source Output]"
-          TopLeft="88.4,83.6">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="280.6,49.4"
-              Start="0,0"
-              End="280.6,41.9">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.7" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.7"
-                    Point2="0,24.7"
-                    Point3="4,24.7" />
-                  <mssgle:LineSegment
-                    End="276.6,24.7" />
-                  <mssgle:CubicBezierSegment
-                    Point1="276.6,24.7"
-                    Point2="280.6,24.7"
-                    Point3="280.6,28.7" />
-                  <mssgle:LineSegment
-                    End="280.6,41.9" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized\Sort"
-          TopLeft="266.666656070286,52.0000004132589" />
-        <NodeLayout
-          Size="112.8,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized\Lookup"
-          TopLeft="452.999982217948,64.765413126992" />
-        <NodeLayout
-          Size="151.2,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized\Flat File Source"
-          TopLeft="74.9999970197679,51.1333337397046" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized\OLE DB Destination"
-          TopLeft="502.166649315093,229.498747300618" />
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized.Paths[Sort Output]"
-          TopLeft="364.266656070286,72.8000004132589">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="88.7333261476624,12.7654127137331"
-              Start="0,0"
-              End="81.2333261476624,12.7654127137331">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="40.3666630738312,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="40.3666630738312,0"
-                    Point2="44.3666630738312,0"
-                    Point3="44.3666630738312,4" />
-                  <mssgle:LineSegment
-                    End="44.3666630738312,8.76541271373311" />
-                  <mssgle:CubicBezierSegment
-                    Point1="44.3666630738312,8.76541271373311"
-                    Point2="44.3666630738312,12.7654127137331"
-                    Point3="48.3666630738312,12.7654127137331" />
-                  <mssgle:LineSegment
-                    End="81.2333261476624,12.7654127137331" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized.Paths[Lookup No Match Output]"
-          TopLeft="509.399982217948,106.365413126992">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="78.366667097145,123.133334173626"
-              Start="0,0"
-              End="78.366667097145,115.633334173626">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,57.566667086813" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,57.566667086813"
-                    Point2="0,61.566667086813"
-                    Point3="4,61.566667086813" />
-                  <mssgle:LineSegment
-                    End="74.366667097145,61.566667086813" />
-                  <mssgle:CubicBezierSegment
-                    Point1="74.366667097145,61.566667086813"
-                    Point2="78.366667097145,61.566667086813"
-                    Point3="78.366667097145,65.566667086813" />
-                  <mssgle:LineSegment
-                    End="78.366667097145,115.633334173626" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-16.6230531701775,66.566667086813,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized.Paths[Flat File Source Output]"
-          TopLeft="226.199997019768,72.3666670764817">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="40.4666590505181,0"
-              Start="0,0"
-              End="32.9666590505181,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="32.9666590505181,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <AnnotationLayout
-          Text=""
-          ParentId="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized"
-          FontInfo="{assembly:Null}"
-          Size="28.8,NaN"
-          Id="61d0f1ad-7f60-430d-8728-f4502b043067"
-          TopLeft="92,182" />
-        <AnnotationLayout
-          Text="x"
-          ParentId="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized"
-          FontInfo="{assembly:Null}"
-          Size="34.4,NaN"
-          Id="45b3f130-56c6-4586-a96c-6c07a88e4589"
-          TopLeft="920.833296742706,500.06667064084" />
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\Parallel Dimensional Table\Data Flow Task -Dim_State">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="112.8,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_State\Lookup"
-          TopLeft="430.833316213555,102.266667479409" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_State\OLE DB Destination"
-          TopLeft="555,210" />
-        <NodeLayout
-          Size="151.2,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_State\Flat File Source"
-          TopLeft="74.9999970197679,51.1333337397046" />
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_State\Sort"
-          TopLeft="266.666656070286,58.0666671281391" />
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_State.Paths[Sort Output]"
-          TopLeft="364.266656070286,78.8666671281391">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="66.5666601432695,44.20000035127"
-              Start="0,0"
-              End="59.0666601432695,44.20000035127">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="29.2833300716347,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="29.2833300716347,0"
-                    Point2="33.2833300716347,0"
-                    Point3="33.2833300716347,4" />
-                  <mssgle:LineSegment
-                    End="33.2833300716347,40.20000035127" />
-                  <mssgle:CubicBezierSegment
-                    Point1="33.2833300716347,40.20000035127"
-                    Point2="33.2833300716347,44.20000035127"
-                    Point3="37.2833300716347,44.20000035127" />
-                  <mssgle:LineSegment
-                    End="59.0666601432695,44.20000035127" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_State.Paths[Flat File Source Output]"
-          TopLeft="226.199997019768,75.4000004339218">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="40.4666590505181,0"
-              Start="0,0"
-              End="32.9666590505181,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="32.9666590505181,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_State.Paths[Lookup No Match Output]"
-          TopLeft="487.233316213555,143.866667479409">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="153.366683786445,66.133332520591"
-              Start="0,0"
-              End="153.366683786445,58.633332520591">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.0666662602955" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,29.0666662602955"
-                    Point2="0,33.0666662602955"
-                    Point3="4,33.0666662602955" />
-                  <mssgle:LineSegment
-                    End="149.366683786445,33.0666662602955" />
-                  <mssgle:CubicBezierSegment
-                    Point1="149.366683786445,33.0666662602955"
-                    Point2="153.366683786445,33.0666662602955"
-                    Point3="153.366683786445,37.0666662602955" />
-                  <mssgle:LineSegment
-                    End="153.366683786445,58.633332520591" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="20.8769551744725,38.0666662602955,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <AnnotationLayout
-          Text=""
-          ParentId="Package\Parallel Dimensional Table\Data Flow Task -Dim_State"
-          FontInfo="{assembly:Null}"
-          Size="28.8,NaN"
-          Id="61d0f1ad-7f60-430d-8728-f4502b043067"
-          TopLeft="92,182" />
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\Parallel Dimensional Table\Data Flow Task -Dim_Rescuer">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="112.8,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Rescuer\Lookup"
-          TopLeft="430.833316213555,102.266667479409" />
-        <NodeLayout
-          Size="151.2,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Rescuer\Flat File Source"
-          TopLeft="74.9999970197679,51.1333337397046" />
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Rescuer\Sort"
-          TopLeft="266.666656070286,58.0666671281391" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Rescuer\OLE DB Destination"
-          TopLeft="475,197" />
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Rescuer.Paths[Sort Output]"
-          TopLeft="364.266656070286,78.8666671281391">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="66.5666601432695,44.20000035127"
-              Start="0,0"
-              End="59.0666601432695,44.20000035127">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="29.2833300716347,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="29.2833300716347,0"
-                    Point2="33.2833300716347,0"
-                    Point3="33.2833300716347,4" />
-                  <mssgle:LineSegment
-                    End="33.2833300716347,40.20000035127" />
-                  <mssgle:CubicBezierSegment
-                    Point1="33.2833300716347,40.20000035127"
-                    Point2="33.2833300716347,44.20000035127"
-                    Point3="37.2833300716347,44.20000035127" />
-                  <mssgle:LineSegment
-                    End="59.0666601432695,44.20000035127" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Rescuer.Paths[Flat File Source Output]"
-          TopLeft="226.199997019768,75.4000004339219">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="40.4666590505181,0"
-              Start="0,0"
-              End="32.9666590505181,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="32.9666590505181,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Rescuer.Paths[Lookup No Match Output]"
-          TopLeft="487.233316213555,143.866667479409">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="73.366683786445,53.133332520591"
-              Start="0,0"
-              End="73.366683786445,45.633332520591">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.5666662602955" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22.5666662602955"
-                    Point2="0,26.5666662602955"
-                    Point3="4,26.5666662602955" />
-                  <mssgle:LineSegment
-                    End="69.366683786445,26.5666662602955" />
-                  <mssgle:CubicBezierSegment
-                    Point1="69.366683786445,26.5666662602955"
-                    Point2="73.366683786445,26.5666662602955"
-                    Point3="73.366683786445,30.5666662602955" />
-                  <mssgle:LineSegment
-                    End="73.366683786445,45.633332520591" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-19.1230448255275,31.5666662602955,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <AnnotationLayout
-          Text=""
-          ParentId="Package\Parallel Dimensional Table\Data Flow Task -Dim_Rescuer"
-          FontInfo="{assembly:Null}"
-          Size="28.8,NaN"
-          Id="61d0f1ad-7f60-430d-8728-f4502b043067"
-          TopLeft="92,182" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
