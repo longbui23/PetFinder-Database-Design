@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="101"
-  DTS:VersionGUID="{4C4B4C9F-C0B3-4EAD-9361-D770506D43F3}">
+  DTS:VersionBuild="102"
+  DTS:VersionGUID="{3FE42A14-6555-4EEB-A092-1ED817F35281}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -11865,64 +11865,6 @@ where [refTable].[Pet_Vaccinated] = ?</property>
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
-      <DTS:PrecedenceConstraints>
-        <DTS:PrecedenceConstraint
-          DTS:refId="Package\Parallel Dimensional Table.PrecedenceConstraints[Constraint]"
-          DTS:CreationName=""
-          DTS:DTSID="{F0F19651-8A64-49C0-B086-E24EE1B8E280}"
-          DTS:From="Package\Parallel Dimensional Table\Data Flow Task -Dim_Type"
-          DTS:LogicalAnd="True"
-          DTS:ObjectName="Constraint"
-          DTS:To="Package\Parallel Dimensional Table\Data Flow Task -Dim_MaturitySize" />
-        <DTS:PrecedenceConstraint
-          DTS:refId="Package\Parallel Dimensional Table.PrecedenceConstraints[Constraint 1]"
-          DTS:CreationName=""
-          DTS:DTSID="{CDE77727-D558-481D-8539-AA5F40C30670}"
-          DTS:From="Package\Parallel Dimensional Table\Data Flow Task -Dim_MaturitySize"
-          DTS:LogicalAnd="True"
-          DTS:ObjectName="Constraint 1"
-          DTS:To="Package\Parallel Dimensional Table\Data Flow Task -Dim_FurLength" />
-        <DTS:PrecedenceConstraint
-          DTS:refId="Package\Parallel Dimensional Table.PrecedenceConstraints[Constraint 2]"
-          DTS:CreationName=""
-          DTS:DTSID="{29B882B2-5385-476F-B123-D5501548DB1F}"
-          DTS:From="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed"
-          DTS:LogicalAnd="True"
-          DTS:ObjectName="Constraint 2"
-          DTS:To="Package\Parallel Dimensional Table\Data Flow Task -Dim_Vaccinated" />
-        <DTS:PrecedenceConstraint
-          DTS:refId="Package\Parallel Dimensional Table.PrecedenceConstraints[Constraint 3]"
-          DTS:CreationName=""
-          DTS:DTSID="{F133E81E-7B68-48DC-86FA-B3DAB13F76B6}"
-          DTS:From="Package\Parallel Dimensional Table\Data Flow Task -Dim_Vaccinated"
-          DTS:LogicalAnd="True"
-          DTS:ObjectName="Constraint 3"
-          DTS:To="Package\Parallel Dimensional Table\Data Flow Task -Dim_Dewormed" />
-        <DTS:PrecedenceConstraint
-          DTS:refId="Package\Parallel Dimensional Table.PrecedenceConstraints[Constraint 4]"
-          DTS:CreationName=""
-          DTS:DTSID="{44672E9C-2DD1-4DEE-8266-711C43554DDD}"
-          DTS:From="Package\Parallel Dimensional Table\Data Flow Task -Dim_Color"
-          DTS:LogicalAnd="True"
-          DTS:ObjectName="Constraint 4"
-          DTS:To="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized" />
-        <DTS:PrecedenceConstraint
-          DTS:refId="Package\Parallel Dimensional Table.PrecedenceConstraints[Constraint 5]"
-          DTS:CreationName=""
-          DTS:DTSID="{CFFDEE80-B8C0-42FC-B7D4-211314AD7E6F}"
-          DTS:From="Package\Parallel Dimensional Table\Data Flow Task -Dim_Sterrilized"
-          DTS:LogicalAnd="True"
-          DTS:ObjectName="Constraint 5"
-          DTS:To="Package\Parallel Dimensional Table\Data Flow Task -Dim_State" />
-        <DTS:PrecedenceConstraint
-          DTS:refId="Package\Parallel Dimensional Table.PrecedenceConstraints[Constraint 6]"
-          DTS:CreationName=""
-          DTS:DTSID="{B3A59FE0-3A12-458D-9CCF-C4D83D04047C}"
-          DTS:From="Package\Parallel Dimensional Table\Data Flow Task -Dim_State"
-          DTS:LogicalAnd="True"
-          DTS:ObjectName="Constraint 6"
-          DTS:To="Package\Parallel Dimensional Table\Data Flow Task -Dim_Rescuer" />
-      </DTS:PrecedenceConstraints>
     </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
@@ -11964,9 +11906,17 @@ where [refTable].[Pet_Vaccinated] = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="208,41.6"
+          Id="Package\Data Flow Task - Raw_Data"
+          TopLeft="485.833314028052,110.066667541398" />
+        <NodeLayout
           Size="172.8,41.6"
           Id="Package\DataTask-FactTable"
           TopLeft="517.261884207764,678.269846660245" />
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\Execute SQL Task"
+          TopLeft="501.04164675706,5.41666670971447" />
         <NodeLayout
           Size="208.8,41.6"
           Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Breed"
@@ -12007,172 +11957,6 @@ where [refTable].[Pet_Vaccinated] = ?</property>
           Size="232.8,41.6"
           Id="Package\Parallel Dimensional Table\Data Flow Task -Dim_Vaccinated"
           TopLeft="267.057132213457,102.723810537278" />
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table.PrecedenceConstraints[Constraint]"
-          TopLeft="129.630919255436,67.2857155579613">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,37.5904745246492"
-              Start="0,0"
-              End="0,30.0904745246492">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.0904745246492" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table.PrecedenceConstraints[Constraint 1]"
-          TopLeft="129.995208666629,146.476190082611">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,42.5904768595622"
-              Start="0,0"
-              End="0,35.0904768595622">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.0904768595622" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table.PrecedenceConstraints[Constraint 2]"
-          TopLeft="383.409512929311,60.1333336777155">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,42.5904768595621"
-              Start="0,0"
-              End="0,35.0904768595621">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.0904768595621" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table.PrecedenceConstraints[Constraint 3]"
-          TopLeft="383.057132213456,144.323810537278">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,40.1142863636924"
-              Start="0,0"
-              End="0,32.6142863636924">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.6142863636924" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table.PrecedenceConstraints[Constraint 4]"
-          TopLeft="616.204740073379,62.9904766529325">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,36.4000006198882"
-              Start="0,0"
-              End="0,28.9000006198882">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.9000006198882" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table.PrecedenceConstraints[Constraint 5]"
-          TopLeft="616.204740073379,140.990477272821">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,45.0666673554316"
-              Start="0,0"
-              End="0,37.5666673554316">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.5666673554316" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parallel Dimensional Table.PrecedenceConstraints[Constraint 6]"
-          TopLeft="615.590454288135,227.657144628252">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-14.2285705770765,43.8285721074965"
-              Start="0,0"
-              End="-14.2285705770765,36.3285721074965">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17.9142860537483" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17.9142860537483"
-                    Point2="0,21.9142860537483"
-                    Point3="-4,21.9142860537483" />
-                  <mssgle:LineSegment
-                    End="-10.2285705770765,21.9142860537483" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-10.2285705770765,21.9142860537483"
-                    Point2="-14.2285705770765,21.9142860537483"
-                    Point3="-14.2285705770765,25.9142860537483" />
-                  <mssgle:LineSegment
-                    End="-14.2285705770765,36.3285721074965" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
@@ -12180,6 +11964,28 @@ where [refTable].[Pet_Vaccinated] = ?</property>
           Size="741.6,411.2"
           Id="Package\Parallel Dimensional Table"
           TopLeft="216.607134249949,219.359525552837" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="586.637480392556,47.0166667097145">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,63.0500008316834"
+              Start="0,0"
+              End="0,55.5500008316834">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.5500008316834" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="587.407134249949,630.559525552837">
@@ -12214,36 +12020,6 @@ where [refTable].[Pet_Vaccinated] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\Execute SQL Task"
-          TopLeft="501.04164675706,5.41666670971447" />
-        <NodeLayout
-          Size="208,41.6"
-          Id="Package\Data Flow Task - Raw_Data"
-          TopLeft="485.833314028052,110.066667541398" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="586.637480392556,47.0166667097145">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,63.0500008316834"
-              Start="0,0"
-              End="0,55.5500008316834">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,55.5500008316834" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="588.620224139001,151.666667541398">
@@ -12269,6 +12045,46 @@ where [refTable].[Pet_Vaccinated] = ?</property>
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task - Raw_Data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Data Flow Task - Raw_Data\Flat File Source"
+          TopLeft="254.166656566991,67.6000005372366" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Data Flow Task - Raw_Data\OLE DB Destination"
+          TopLeft="507.499979833763,71.0666672314538" />
+        <EdgeLayout
+          Id="Package\Data Flow Task - Raw_Data.Paths[Flat File Source Output]"
+          TopLeft="405.366656566991,90.1333338843452">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="102.133323266772,0"
+              Start="0,0"
+              End="94.633323266772,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="94.633323266772,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
   <TaskHost
     design-time-name="Package\DataTask-FactTable">
     <LayoutInfo>
@@ -14406,46 +14222,6 @@ where [refTable].[Pet_Vaccinated] = ?</property>
           Size="34.4,NaN"
           Id="45b3f130-56c6-4586-a96c-6c07a88e4589"
           TopLeft="920.833296742706,500.06667064084" />
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\Data Flow Task - Raw_Data">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="151.2,41.6"
-          Id="Package\Data Flow Task - Raw_Data\Flat File Source"
-          TopLeft="254.166656566991,67.6000005372366" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Data Flow Task - Raw_Data\OLE DB Destination"
-          TopLeft="507.499979833763,71.0666672314538" />
-        <EdgeLayout
-          Id="Package\Data Flow Task - Raw_Data.Paths[Flat File Source Output]"
-          TopLeft="405.366656566991,90.1333338843452">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="102.133323266772,0"
-              Start="0,0"
-              End="94.633323266772,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="94.633323266772,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>

@@ -8,9 +8,9 @@ SELECT
 	T.Pet_Type,
 	COUNT(F.PetID ) AS Total_Case,
 	SUM(F.Quantity) AS Total_Number,
-	AVG(F.Fee)/AVG(F.Quantity) AS Average_Price,
-	MAX(F.age)/AVG(F.Quantity) AS maximum_age,
-	MIN(F.age)/AVG(F.Quantity) AS minimum_age,
+	SUM(F.Fee)/SUM(F.Quantity) AS Average_Price,
+	MAX(F.age) AS maximum_age,
+	MIN(F.age) AS minimum_age,
 	ROUND(COUNT(CASE WHEN V.Pet_Vaccinated = 'Yes' THEN F.PetID ELSE NULL END) * 1.0/COUNT(F.PetID),2) AS pct_vaccinated,
 	ROUND(COUNT(CASE WHEN D.Pet_Dewormed = 'Yes' THEN F.PetID ELSE NULL END) * 1.0/COUNT(F.PetID),2) AS pct_dewormed,
 	ROUND(COUNT(CASE WHEN S.Pet_Sterilized = 'Yes' THEN F.PetID ELSE NULL END) * 1.0/COUNT(F.PetID),2) AS pct_sterilized
@@ -27,9 +27,9 @@ SELECT
 	p1.Pet_Breed,
 	COUNT(DISTINCT f.PetID) AS num_case,
 	SUM(F.Quantity) AS Total_Number,
-	AVG(F.Fee)/AVG(F.Quantity) AS Avg_Price,
-	MAX(F.age)/AVG(F.Quantity) AS maximum_age,
-	MIN(F.age)/AVG(F.Quantity) AS minimum_age,
+	SUM(F.Fee)/MAX(F.Quantity) AS Avg_Price,
+	MAX(F.age) AS maximum_age,
+	MIN(F.age) AS minimum_age,
 	ROUND(COUNT(CASE WHEN V.Pet_Vaccinated = 'Yes' THEN F.PetID ELSE NULL END) * 1.0/COUNT(F.PetID),2) AS pct_vaccinated,
 	ROUND(COUNT(CASE WHEN D.Pet_Dewormed = 'Yes' THEN F.PetID ELSE NULL END) * 1.0/COUNT(F.PetID),2) AS pct_dewormed,
 	ROUND(COUNT(CASE WHEN S.Pet_Sterilized = 'Yes' THEN F.PetID ELSE NULL END) * 1.0/COUNT(F.PetID),2) AS pct_sterilized
@@ -39,6 +39,24 @@ LEFT JOIN Dim_Vaccinated V ON F.Pet_Vaccinated_ID = V.Pet_Vaccinated_ID
 LEFT JOIN Dim_Dewormed D ON F.Pet_Dewormed_ID = D.Pet_Dewormed_ID
 LEFT JOIN Dim_Sterilized S ON F.Pet_Sterilized_ID = S.Pet_Sterlized_ID
 GROUP BY p1.Pet_Breed;
+
+SELECT
+	p2.Pet_Breed,
+	COUNT(DISTINCT f.PetID) AS num_case,
+	SUM(F.Quantity) AS Total_Number,
+	AVG(F.Fee)/AVG(F.Quantity) AS Avg_Price,
+	MAX(F.age)/AVG(F.Quantity) AS maximum_age,
+	MIN(F.age)/AVG(F.Quantity) AS minimum_age,
+	ROUND(COUNT(CASE WHEN V.Pet_Vaccinated = 'Yes' THEN F.PetID ELSE NULL END) * 1.0/COUNT(F.PetID),2) AS pct_vaccinated,
+	ROUND(COUNT(CASE WHEN D.Pet_Dewormed = 'Yes' THEN F.PetID ELSE NULL END) * 1.0/COUNT(F.PetID),2) AS pct_dewormed,
+	ROUND(COUNT(CASE WHEN S.Pet_Sterilized = 'Yes' THEN F.PetID ELSE NULL END) * 1.0/COUNT(F.PetID),2) AS pct_sterilized
+FROM Fact_Pet f
+LEFT JOIN Dim_Breed p2 ON f.Pet_Breed2_ID = p2.Pet_Breed_ID
+LEFT JOIN Dim_Vaccinated V ON F.Pet_Vaccinated_ID = V.Pet_Vaccinated_ID
+LEFT JOIN Dim_Dewormed D ON F.Pet_Dewormed_ID = D.Pet_Dewormed_ID
+LEFT JOIN Dim_Sterilized S ON F.Pet_Sterilized_ID = S.Pet_Sterlized_ID
+GROUP BY p2.Pet_Breed;
+
 
 -- Types of FurLength
 SELECT
